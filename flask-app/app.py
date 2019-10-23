@@ -109,6 +109,7 @@ def chart():
     script_survived_chart, div_survived_chart = components(survived_chart)
     script_title_chart, div_title_chart = components(title_chart)
     script_hist_age, div_hist_age = components(hist_age)
+    app_names = ['app1', 'app2', 'app3', 'app4']
 
     return render_template(
         'index.html',
@@ -118,7 +119,8 @@ def chart():
         script_title_chart=script_title_chart,
         div_hist_age=div_hist_age,
         script_hist_age=script_hist_age,
-        selected_class=selected_class
+        selected_class=selected_class,
+        app_names=app_names
     )
 
 ################################################################################
